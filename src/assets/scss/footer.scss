@@ -1,0 +1,73 @@
+@use "./variables";
+
+.footer {
+  background-color: #f8f8f8;
+  // padding: 16px 16px;
+  text-align: center;
+  font-family: "TT Lakes";
+  color: #7e7e82;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+#footer-all {
+  border-color: currentcolor #d9fff5 #d9fff5;
+  border-top: 1px solid #d9fff5;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 24px;
+  padding-top: 40px;
+}
+
+.footer__text--developer {
+  display: flex;
+  flex-direction: column;
+}
+
+.text__year,
+.text__company,
+.text__privacy,
+.text__info {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .footer {
+    letter-spacing: 0;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .footer__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .text__company {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .text__year {
+    text-align: left;
+  }
+  .text__info {
+    white-space: wrap;
+    text-align: right;
+  }
+  .text__privacy {
+    margin-left: 19px;
+    margin-right: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    display: flex;
+    margin-left: 160px;
+  }
+}
