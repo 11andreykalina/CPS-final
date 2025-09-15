@@ -71,7 +71,14 @@
 @media (min-width: 1440px) {
   .footer {
     width: 1440px;
+    height: 86px;
     position: relative;
-    left: 160px;
+    left: 162px;
+  }
+    .text__info {
+    width: 330px;
+    height: 32px;
+    white-space: wrap;
+    text-align: right;
   }
 }
