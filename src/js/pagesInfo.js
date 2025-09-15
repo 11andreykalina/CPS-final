@@ -15,6 +15,7 @@ import Sony from "../assets/image/Sony.svg";
 import more from "../assets/image/more.svg";
 import PictureCopy from "../assets/image/Picture Copy.svg";
 import { InitSwiper2 } from "./swiper.js";
+import moonIcon from '../assets/image/moon.svg';
 
 export function createPages() {
   const pages = document.createElement("main");
@@ -25,7 +26,11 @@ export function createPages() {
       <div class="main__title">
         <img class="main__title-divider" src="${highilight}" />
         <h1 class="main__title-name">Услуги и сервисы</h1>
+        <button id="theme-toggle" class="theme-toggle">
+          <img src="${moonIcon}" alt="Toggle Dark Mode" />  
+          </button>
       </div>
+
       <div class="main__services-buttons">
         <button class="button_item">
           <p class="button_item-text">Оставить заявку</p>

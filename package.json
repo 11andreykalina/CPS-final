@@ -44,6 +44,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "darkreader": "^4.9.109",
     "focus-visible": "^5.2.0",
     "normalize.css": "^8.0.1",
     "swiper": "^11.2.8"

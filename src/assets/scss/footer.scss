@@ -57,17 +57,21 @@
     text-align: left;
   }
   .text__info {
+    width: 300px;
+    height: 32px;
     white-space: wrap;
     text-align: right;
   }
   .text__privacy {
-    margin-left: 19px;
-    margin-right: 24px;
+    position: relative;
+    left: 19px;
+    right: 24px;
   }
 }
 @media (min-width: 1440px) {
   .footer {
-    display: flex;
-    margin-left: 160px;
+    width: 1440px;
+    position: relative;
+    left: 160px;
   }
 }

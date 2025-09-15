@@ -7,6 +7,7 @@ import profile from "../assets/image/profile.svg";
 import repair from "../assets/image/repair.svg";
 import checkstatus from "../assets/image/checkstatus.svg";
 
+
 export function createHeader() {
   const header = document.createElement("header");
   header.className = "header";
