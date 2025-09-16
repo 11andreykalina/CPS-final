@@ -69,11 +69,21 @@
   }
 }
 @media (min-width: 1440px) {
-  .footer {
-    width: 1440px;
+  #footer-all {
+    max-width: 1120px;
     height: 86px;
     position: relative;
-    left: 162px;
+    left: 320px;
+    
+  }
+
+  .footer__text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+   
   }
     .text__info {
     width: 330px;
