@@ -35,25 +35,24 @@ root.appendChild(pages);
 root.appendChild(footer);
 root.appendChild(modal);
 
-// Инициализация Dark Reader
 function initDarkTheme() {
-  const savedTheme = localStorage.getItem('theme');  // Проверяем сохранённую тему (localStorage — браузерное хранилище)
+  const savedTheme = localStorage.getItem('theme'); 
   
   if (savedTheme === 'dark') {
     enableDarkMode({
-      brightness: 100,  // Яркость (100% — нормальная)
-      contrast: 90,     // Контраст (90% для мягкости)
-      sepia: 10         // Сепия (10% для тёплого тона; настройте под ваш дизайн)
+      brightness: 100, 
+      contrast: 90,   
+      sepia: 10         
     });
   } else if (savedTheme === 'light') {
     disableDarkMode();
   } else {
-    // Авто по системным настройкам (prefers-color-scheme)
+
     followSystemColorScheme();
   }
 }
 
-initDarkTheme();  // Вызываем при загрузке страницы
+initDarkTheme(); 
 
 const toggleBtn = document.querySelector('#theme-toggle');
 if (toggleBtn) {
@@ -66,8 +65,8 @@ if (toggleBtn) {
       enableDarkMode({ brightness: 100, contrast: 90, sepia: 10 });
       localStorage.setItem('theme', 'dark');
     }
-    // Опционально: Измените иконку кнопки (солнце/луна) через JS
-    toggleBtn.querySelector('img').src = isDark ? sunIcon : moonIcon;  // Добавьте sunIcon импорт
+  
+    toggleBtn.querySelector('img').src = isDark ? sunIcon : moonIcon;  
   });
 }
 

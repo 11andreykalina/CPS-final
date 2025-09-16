@@ -167,6 +167,7 @@ body {
   padding: 8px 16px;
   flex: 0 0 auto;
   white-space: nowrap;
+  border: 2px solid transparent;
   cursor: pointer;
 }
 
@@ -333,6 +334,7 @@ body {
   .main__menu-items {
     display: flex;
     padding-left: 24px;
+    border: 2px solid transparent;
   }
   .main__information {
     display: flex;

@@ -69,27 +69,31 @@
   }
 }
 @media (min-width: 1440px) {
-  #footer-all {
-    min-width: 1100px;
-    max-width: none;
-    height: 86px;
+ body {
     position: relative;
-    left: 320px;
-    
+  }
+  
+  #footer-all {
+    margin-left: 320px; 
+    width: calc(100% - 320px); 
+    min-width: auto;
+    height: auto;
+    position: static;
+  }
+
+  .footer__container {
+    padding: 16, 32px;
   }
 
   .footer__text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    text-align: center;
-   
   }
+  
   .text__info {
     width: 330px;
-    height: 32px;
-    white-space: wrap;
+    white-space: normal;
     text-align: right;
+     position: relative;
+    right: 16px;
   }
 }

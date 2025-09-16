@@ -1,10 +1,9 @@
 export function initBurgerMenu() {
-  // Правильные селекторы:
+
   const menuToggle = document.getElementById("menu-toggle");
   const overlay = document.querySelector(".overlay");
   const burgerMenu = document.querySelector(".burger-menu");
 
-  // Более строгая проверка элементов
   if (!(menuToggle instanceof HTMLInputElement) || !overlay || !burgerMenu) {
     return;
   }
